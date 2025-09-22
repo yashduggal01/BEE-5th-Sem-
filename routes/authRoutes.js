@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const authController = require("../controllers/authController");
 
+router.get("/", authController.renderLandingPage);
 router.get("/signin", authController.renderSignIn);
 router.get("/signup", authController.renderSignUp);
 router.post("/signup", authController.signUp);

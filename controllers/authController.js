@@ -3,6 +3,10 @@ const path = require("path");
 
 const usersFile = path.join(__dirname, "../users.json");
 
+exports.renderLandingPage = (req, res) => {
+  res.render("index");
+};
+
 exports.renderSignIn = (req, res) => {
   res.render("signin");
 };

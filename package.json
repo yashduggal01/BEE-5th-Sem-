@@ -20,5 +20,8 @@
     "pg": "^8.13.3"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.13"
+  }
 }

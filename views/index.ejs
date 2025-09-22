@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Service - Home Services at Your Doorstep</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/landing.css">
+</head>
+<body class="landing-page">
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="nav-logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="14" font-family="Segoe UI, Arial, sans-serif" font-weight="bold" dy=".3em">US</text>
+                    </svg>
+                </div>
+                <span class="nav-brand">Urban Service</span>
+            </div>
+            
+            <!-- Auth Buttons -->
+            <div class="nav-links">
+                <a href="/signin" class="nav-link">Sign In</a>
+                <a href="/signup" class="nav-btn">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Home Services<br>
+                <span class="hero-subtitle">at Your Doorstep</span>
+            </h1>
+            <p class="hero-description">
+                Book reliable & affordable home services like beauty, repairs, painting, cleaning & more
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Search for services..."
+                    class="search-input"
+                    id="searchInput"
+                >
+                <button class="search-btn" onclick="searchServices()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Professional services for all your home needs</p>
+            </div>
+
+            <!-- Service Categories Grid -->
+            <div class="services-grid">
+                <!-- Beauty & Spa -->
+                <div class="service-card" onclick="selectService('Beauty & Spa')">
+                    <div class="service-icon icon-beauty">
+                        ✨
+                    </div>
+                    <h3 class="service-name">Beauty & Spa</h3>
+                    <p class="service-desc">Salon services at home</p>
+                </div>
+
+                <!-- Cleaning -->
+                <div class="service-card" onclick="selectService('Cleaning')">
+                    <div class="service-icon icon-cleaning">
+                        🧹
+                    </div>
+                    <h3 class="service-name">Cleaning</h3>
+                    <p class="service-desc">Home & office cleaning</p>
+                </div>
+
+                <!-- Repairs -->
+                <div class="service-card" onclick="selectService('Repairs')">
+                    <div class="service-icon icon-repairs">
+                        🔧
+                    </div>
+                    <h3 class="service-name">Repairs</h3>
+                    <p class="service-desc">Appliance & home repairs</p>
+                </div>
+
+                <!-- Painting -->
+                <div class="service-card" onclick="selectService('Painting')">
+                    <div class="service-icon icon-painting">
+                        🎨
+                    </div>
+                    <h3 class="service-name">Painting</h3>
+                    <p class="service-desc">Interior & exterior painting</p>
+                </div>
+
+                <!-- Plumbing -->
+                <div class="service-card" onclick="selectService('Plumbing')">
+                    <div class="service-icon icon-plumbing">
+                        🚿
+                    </div>
+                    <h3 class="service-name">Plumbing</h3>
+                    <p class="service-desc">Pipe repairs & installations</p>
+                </div>
+
+                <!-- Electrical -->
+                <div class="service-card" onclick="selectService('Electrical')">
+                    <div class="service-icon icon-electrical">
+                        ⚡
+                    </div>
+                    <h3 class="service-name">Electrical</h3>
+                    <p class="service-desc">Wiring & electrical work</p>
+                </div>
+
+                <!-- Gardening -->
+                <div class="service-card" onclick="selectService('Gardening')">
+                    <div class="service-icon icon-gardening">
+                        🌱
+                    </div>
+                    <h3 class="service-name">Gardening</h3>
+                    <p class="service-desc">Garden maintenance & care</p>
+                </div>
+
+                <!-- Pest Control -->
+                <div class="service-card" onclick="selectService('Pest Control')">
+                    <div class="service-icon icon-pest">
+                        🐛
+                    </div>
+                    <h3 class="service-name">Pest Control</h3>
+                    <p class="service-desc">Safe pest elimination</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="services-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Urban Service?</h2>
+                <p class="section-subtitle">Trusted by thousands of customers</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+                    <h3 class="feature-title">Verified Professionals</h3>
+                    <p class="feature-desc">All our service providers are background-verified and trained professionals</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        ⏰
+                    </div>
+                    <h3 class="feature-title">On-Time Service</h3>
+                    <p class="feature-desc">We guarantee timely service delivery with real-time tracking</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        💰
+                    </div>
+                    <h3 class="feature-title">Best Prices</h3>
+                    <p class="feature-desc">Transparent pricing with no hidden charges and best rates in the market</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="services-container">
+            <h2 class="cta-title">Ready to Book Your Service?</h2>
+            <p class="cta-desc">Join thousands of satisfied customers</p>
+            <div class="cta-buttons">
+                <a href="/signup" class="cta-btn-primary">Get Started</a>
+                <a href="/signin" class="cta-btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Segoe UI, Arial, sans-serif" font-weight="bold" dy=".3em">US</text>
+                            </svg>
+                        </div>
+                        <span class="footer-brand-text">Urban Service</span>
+                    </div>
+                    <p class="footer-desc">Your trusted partner for all home services. Quality, reliability, and affordability guaranteed.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="selectService('Beauty & Spa')">Beauty & Spa</a></li>
+                        <li><a href="#" onclick="selectService('Cleaning')">Cleaning</a></li>
+                        <li><a href="#" onclick="selectService('Repairs')">Repairs</a></li>
+                        <li><a href="#" onclick="selectService('Painting')">Painting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="showInfo('About Us')">About Us</a></li>
+                        <li><a href="#" onclick="showInfo('Careers')">Careers</a></li>
+                        <li><a href="#" onclick="showInfo('Contact')">Contact</a></li>
+                        <li><a href="#" onclick="showInfo('Blog')">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="showInfo('Help Center')">Help Center</a></li>
+                        <li><a href="#" onclick="showInfo('Terms of Service')">Terms of Service</a></li>
+                        <li><a href="#" onclick="showInfo('Privacy Policy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showInfo('Safety')">Safety</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <%= new Date().getFullYear() %> Urban Service. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        function searchServices() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (searchTerm) {
+                alert(`Searching for: "${searchTerm}"\n\nIn a real application, this would:\n• Filter available services\n• Show search results\n• Redirect to service booking page`);
+            } else {
+                alert('Please enter a service to search for');
+            }
+        }
+
+        // Service selection
+        function selectService(serviceName) {
+            alert(`You selected: ${serviceName}\n\nIn a real application, this would:\n• Redirect to ${serviceName} service page\n• Show available professionals\n• Allow booking and scheduling`);
+        }
+
+        // Info pages
+        function showInfo(pageName) {
+            alert(`${pageName} page\n\nIn a real application, this would redirect to the ${pageName} page with relevant information.`);
+        }
+
+        // Search on Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchServices();
+            }
+        });
+
+        // Smooth scroll for navigation (if needed)
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Urban Service Landing Page Loaded Successfully');
+        });
+    </script>
+</body>
+</html>

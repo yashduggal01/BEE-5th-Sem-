@@ -12,11 +12,6 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));
 
-// Home redirects to sign in
-app.get("/", (req, res) => {
-  res.redirect("/signin");
-});
-
 // Auth routes
 app.use("/", authRoutes);
 
