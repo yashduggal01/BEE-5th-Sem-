@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@example.com",
+    "phone": "8765935363",
+    "password": "aarav"
+  },
+  {
+    "name": "siddharth bob",
+    "email": "bob@gmail.com",
+    "phone": "987654321134",
+    "password": "bob"
+  }
+]
